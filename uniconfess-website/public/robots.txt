@@ -1,0 +1,57 @@
+# https://uniconfesss.vercel.app/robots.txt (static fallback)
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /draft/
+Disallow: /_draft/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /draft/
+Disallow: /_draft/
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /api/
+Disallow: /draft/
+Disallow: /_draft/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /draft/
+Disallow: /_draft/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /draft/
+Disallow: /_draft/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /draft/
+Disallow: /_draft/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /draft/
+Disallow: /_draft/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /draft/
+Disallow: /_draft/
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /draft/
+Disallow: /_draft/
+
+Host: https://uniconfesss.vercel.app
+Sitemap: https://uniconfesss.vercel.app/sitemap.xml
