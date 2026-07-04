@@ -49,6 +49,16 @@ export function Footer() {
                   Google Play
                 </a>
               </li>
+              <li>
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSe1C0IAJG-XBjBqUBvVS2bG37sz9ZLGXs3JhjQMnIECYdy_Tw/viewform?usp=send_form" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-foreground transition-colors text-red-500 font-medium"
+                >
+                  Delete Account
+                </a>
+              </li>
             </ul>
           </div>
         </div>
