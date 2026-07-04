@@ -6,6 +6,7 @@ import { MobileNav } from "./MobileNav";
 const navLinks = [
   { href: "/features", label: "Features" },
   { href: "/about", label: "About" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];

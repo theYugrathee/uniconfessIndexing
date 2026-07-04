@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { AnimateIn } from "@/components/ui/AnimateIn";
 import { PLAY_STORE_URL } from "@/lib/constants";
@@ -70,7 +71,17 @@ export function Hero() {
           </div>
 
           <AnimateIn delay={120} className="flex justify-center lg:justify-end">
-            <PhoneMockup />
+            <div className="relative w-full max-w-[320px]">
+              <Image
+                src="/images/home-page-uniconfess.png"
+                alt="UniConfess app home feed interface showing anonymous campus confessions and student posts"
+                title="UniConfess Anonymous Campus Feed Dashboard"
+                width={320}
+                height={640}
+                priority
+                className="rounded-[2rem] border border-border shadow-[0_24px_80px_-12px_rgba(0,0,0,0.15)]"
+              />
+            </div>
           </AnimateIn>
         </div>
       </div>

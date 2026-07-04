@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   MessageSquare,
   Users,
@@ -49,6 +50,30 @@ export function Features({ features }: FeaturesProps) {
         <div className="mt-14 divide-y divide-border border-y border-border">
           {features.map((feature, index) => {
             const Icon = iconMap[feature.icon];
+            const featureImage = 
+              feature.id === "posting" ? "/images/home-page-uniconfess.png" :
+              feature.id === "clubs" ? "/images/clubs.png" :
+              feature.id === "marketplace" ? "/images/Marketplace-uniconfess.png" :
+              feature.id === "messaging" ? "/images/realtime-messages-uniconfess.png" :
+              feature.id === "leaderboards" ? "/images/leaderboard-uniconfess.png" :
+              feature.id === "vault" ? "/images/search-feature.png" : null;
+            
+            const altText = 
+              feature.id === "posting" ? "UniConfess app anonymous posting interface for campus confessions" :
+              feature.id === "clubs" ? "UniConfess app student clubs and real-time community chat interface" :
+              feature.id === "marketplace" ? "UniConfess local peer-to-peer campus marketplace interface for buying and selling textbooks" :
+              feature.id === "messaging" ? "UniConfess real-time messaging interface for student communication" :
+              feature.id === "leaderboards" ? "UniConfess campus leaderboard showing top student contributors" :
+              feature.id === "vault" ? "UniConfess secret vault interface for private drafts and saved content" : "";
+            
+            const titleText = 
+              feature.id === "posting" ? "UniConfess Anonymous Posting" :
+              feature.id === "clubs" ? "UniConfess University Student Clubs" :
+              feature.id === "marketplace" ? "UniConfess Student Campus Marketplace" :
+              feature.id === "messaging" ? "UniConfess Real-time Messaging" :
+              feature.id === "leaderboards" ? "UniConfess Campus Leaderboard" :
+              feature.id === "vault" ? "UniConfess Secret Vault" : "";
+            
             return (
               <AnimateIn key={feature.id} delay={index * 60}>
                 <article className="group grid gap-4 py-8 sm:grid-cols-12 sm:items-start sm:gap-8">
@@ -70,6 +95,19 @@ export function Features({ features }: FeaturesProps) {
                     <p className="mt-1 text-sm leading-relaxed text-muted sm:mt-2">
                       {feature.description}
                     </p>
+                    {featureImage && (
+                      <div className="mt-4">
+                        <Image
+                          src={featureImage}
+                          alt={altText}
+                          title={titleText}
+                          width={180}
+                          height={360}
+                          loading="lazy"
+                          className="rounded-xl border border-border shadow-lg"
+                        />
+                      </div>
+                    )}
                   </div>
                 </article>
               </AnimateIn>

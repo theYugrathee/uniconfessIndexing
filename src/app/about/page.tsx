@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { PageHero } from "@/components/layout/PageHero";
 import { AnimateIn } from "@/components/ui/AnimateIn";
@@ -81,32 +82,47 @@ export default function AboutPage() {
 
           <AnimateIn delay={100}>
             <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-                Founder
-              </p>
-              <h3 className="mt-3 text-xl font-semibold text-foreground">{FOUNDER.name}</h3>
-              <p className="mt-1 text-sm text-muted">{FOUNDER.title} · {FOUNDER.location}</p>
-              <p className="mt-5 text-sm leading-relaxed text-muted">
-                Developer and entrepreneur focused on student privacy, community safety,
-                and products that scale with campuses — not against them.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <a
-                  href={`mailto:${FOUNDER.email}`}
-                  className="inline-flex items-center gap-1 rounded-md border border-border px-4 py-2 text-sm font-medium text-foreground transition hover:bg-surface"
-                >
-                  Email Yug
-                  <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
-                </a>
-                <a
-                  href={FOUNDER.linkedIn}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 rounded-md border border-border px-4 py-2 text-sm font-medium text-foreground transition hover:bg-surface"
-                >
-                  LinkedIn
-                  <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
-                </a>
+              <div className="flex flex-col gap-6 sm:flex-row sm:gap-8">
+                <div className="flex-shrink-0">
+                  <Image
+                    src="/images/uniconfess-founder-Yugrathee.png"
+                    alt={`${FOUNDER.name} - Founder of UniConfess`}
+                    title={`${FOUNDER.name} - Founder & CEO`}
+                    width={200}
+                    height={200}
+                    loading="lazy"
+                    className="h-48 w-48 rounded-2xl object-cover border border-border"
+                  />
+                </div>
+                <div className="flex-1">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+                    Founder
+                  </p>
+                  <h3 className="mt-3 text-xl font-semibold text-foreground">{FOUNDER.name}</h3>
+                  <p className="mt-1 text-sm text-muted">{FOUNDER.title} · {FOUNDER.location}</p>
+                  <p className="mt-5 text-sm leading-relaxed text-muted">
+                    Developer and entrepreneur focused on student privacy, community safety,
+                    and products that scale with campuses — not against them.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-3">
+                    <a
+                      href={`mailto:${FOUNDER.email}`}
+                      className="inline-flex items-center gap-1 rounded-md border border-border px-4 py-2 text-sm font-medium text-foreground transition hover:bg-surface"
+                    >
+                      Email Yug
+                      <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
+                    </a>
+                    <a
+                      href={FOUNDER.linkedIn}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 rounded-md border border-border px-4 py-2 text-sm font-medium text-foreground transition hover:bg-surface"
+                    >
+                      LinkedIn
+                      <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </AnimateIn>
