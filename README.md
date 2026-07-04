@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UniConfess
+
+The premier campus-first social platform built exclusively for college and university students to connect, share voices (publicly or anonymously), join clubs, buy/sell on campus marketplaces, and privately message verified peers.
+
+## About UniConfess
+
+UniConfess is a revolutionary social platform designed specifically for the modern college experience. It creates a safe, verified space where students can authentically express themselves, build meaningful connections, and access campus-specific resources. Whether you want to share your thoughts anonymously, find study partners, buy and sell textbooks, or join campus clubs, UniConfess brings it all together in one beautifully designed app.
+
+## Features
+
+### 🎤 Public & Anonymous Posting
+Share campus thoughts on the Campus Feed or speak freely with Anonymous Posting. Toggle identity per post — your voice, your rules.
+
+### 👥 Campus & Global Clubs
+Join interest-based communities at your university or connect with students worldwide. Study groups, hobby clubs, and campus-wide engagement.
+
+### 🛒 Campus Marketplace
+Buy and sell textbooks, electronics, and essentials within your verified campus network. Local transactions with trusted peers only.
+
+### 💬 Real-time Messaging
+Integrated chat lets you communicate directly with verified peers. Private conversations encrypted in transit.
+
+### 🏆 Campus Leaderboards
+Recognizing active contributors at both campus and global levels. Earn visibility for positive community participation.
+
+### 🔒 Secret Vault
+Your private space for drafts, saved confessions, and personal notes — secured and separate from public feeds.
+
+## Founder
+
+**Yug Rathee**  
+Founder & CEO  
+Haryana, India  
+
+📧 yugrathee28@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/yug-rathee-a1388b333)
+
+Yug Rathee founded UniConfess with a vision to create a platform that empowers students to connect authentically while maintaining privacy and safety. Based in Haryana, India, Yug is passionate about building technology that serves the unique needs of college and university students worldwide.
+
+## Tech Stack
+
+- **Framework**: Next.js 16.2.10
+- **UI Library**: React 19.2.4
+- **Styling**: Tailwind CSS 4
+- **Icons**: Lucide React
+- **Language**: TypeScript
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ installed
+- npm, yarn, pnpm, or bun package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/theYugrathee/uniconfessIndexing.git
+cd uniconfessIndexing
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This project is deployed on Vercel. The easiest way to deploy is using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Visit the live site: [https://uniconfesss.vercel.app](https://uniconfesss.vercel.app)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Download the App
 
-## Deploy on Vercel
+Get the UniConfess mobile app on Google Play:
+[📱 Download on Google Play](https://play.google.com/store/apps/details?id=com.yugrathee.uniconfess.app)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is private and proprietary. All rights reserved.
+
+## Contact
+
+For inquiries, support, or partnership opportunities:
+- Email: yugrathee28@gmail.com
+- LinkedIn: [Yug Rathee](https://linkedin.com/in/yug-rathee-a1388b333)
