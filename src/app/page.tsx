@@ -9,6 +9,22 @@ import {
   softwareApplicationJsonLd,
   faqJsonLd,
 } from "@/lib/metadata";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'UniConfess Official Site | Your Campus. Your Voice. Your Rules.',
+  description: 'Welcome to the official UniConfess web application founded by Yug Rathee. Connect with your college campus, join exclusive student clubs, explore the peer marketplace, and share anonymous confessions safely.',
+  alternates: {
+    canonical: 'https://uniconfesss.vercel.app',
+  },
+  openGraph: {
+    title: 'UniConfess Official Site | Your Campus Social Network',
+    description: 'The premier campus-first anonymous social network and student community marketplace founded by Yug Rathee.',
+    url: 'https://uniconfesss.vercel.app',
+    siteName: 'UniConfess',
+    type: 'website',
+  },
+};
 
 export default function HomePage() {
   const orgSchema = organizationJsonLd();

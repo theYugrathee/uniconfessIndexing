@@ -115,8 +115,15 @@ function ImageGalleryJsonLd() {
       "@type": "ImageObject",
       contentUrl: `${siteUrl}${item.image}`,
       description: item.alt,
-      creator: "Yug Rathee",
-      copyrightHolder: "Yug Rathee",
+      creator: {
+        "@type": "Person",
+        name: FOUNDER.name,
+        email: FOUNDER.email,
+      },
+      creditText: `© ${new Date().getFullYear()} ${FOUNDER.name}`,
+      copyrightNotice: `© ${new Date().getFullYear()} ${FOUNDER.name}. All rights reserved.`,
+      license: "https://uniconfesss.vercel.app/terms",
+      acquireLicensePage: "https://uniconfesss.vercel.app/contact",
       name: item.title,
     })),
   };
