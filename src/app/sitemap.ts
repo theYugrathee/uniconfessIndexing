@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://uniconfesss.vercel.app'
-  const currentDate = '2026-07-05'
+  const currentDate = new Date('2026-07-05')
 
   return [
     {
