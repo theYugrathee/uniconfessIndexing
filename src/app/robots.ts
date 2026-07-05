@@ -25,6 +25,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: '/sitemap.xml',
+    sitemap: 'https://uniconfesss.vercel.app/sitemap.xml',
   }
 }
