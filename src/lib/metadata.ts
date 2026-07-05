@@ -90,7 +90,19 @@ export function organizationJsonLd() {
     "@type": "Organization",
     name: APP_NAME,
     url: siteUrl,
-    logo: `${siteUrl}/icon.svg`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${siteUrl}/icon.svg`,
+      creator: {
+        "@type": "Person",
+        name: FOUNDER.name,
+        email: FOUNDER.email,
+      },
+      creditText: `© ${new Date().getFullYear()} ${FOUNDER.name}`,
+      copyrightNotice: `© ${new Date().getFullYear()} ${FOUNDER.name}. All rights reserved.`,
+      license: `${siteUrl}/terms`,
+      acquireLicensePage: `${siteUrl}/contact`,
+    },
     description: APP_DESCRIPTION,
     founder: {
       "@type": "Person",
@@ -122,6 +134,19 @@ export function softwareApplicationJsonLd() {
     description: APP_DESCRIPTION,
     url: siteUrl,
     downloadUrl: PLAY_STORE_URL,
+    image: {
+      "@type": "ImageObject",
+      url: `${siteUrl}/icon.svg`,
+      creator: {
+        "@type": "Person",
+        name: FOUNDER.name,
+        email: FOUNDER.email,
+      },
+      creditText: `© ${new Date().getFullYear()} ${FOUNDER.name}`,
+      copyrightNotice: `© ${new Date().getFullYear()} ${FOUNDER.name}. All rights reserved.`,
+      license: `${siteUrl}/terms`,
+      acquireLicensePage: `${siteUrl}/contact`,
+    },
     offers: {
       "@type": "Offer",
       price: "0",
@@ -190,6 +215,15 @@ export function articleJsonLd({
       logo: {
         "@type": "ImageObject",
         url: `${siteUrl}/icon.svg`,
+        creator: {
+          "@type": "Person",
+          name: FOUNDER.name,
+          email: FOUNDER.email,
+        },
+        creditText: `© ${new Date().getFullYear()} ${FOUNDER.name}`,
+        copyrightNotice: `© ${new Date().getFullYear()} ${FOUNDER.name}. All rights reserved.`,
+        license: `${siteUrl}/terms`,
+        acquireLicensePage: `${siteUrl}/contact`,
       },
     },
     timeRequired: readingTime,
