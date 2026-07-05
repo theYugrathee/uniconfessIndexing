@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     google: "kGpJuNST8JUQbxWJ6UNjVWcqAOHnUMz0-2X0W2-SX9U",
     yandex: "PASTE_YANDEX_VERIFICATION_CODE_HERE",
   },
+  other: {
+    "msvalidate.01": "07B83FE8499E6CC6B300D66461F1972F",
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
